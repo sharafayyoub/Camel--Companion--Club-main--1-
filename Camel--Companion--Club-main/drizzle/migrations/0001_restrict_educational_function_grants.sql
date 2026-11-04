@@ -1,0 +1,3 @@
+REVOKE ALL ON FUNCTION public.edu_school(), public.edu_has_role(public.edu_role), public.edu_create_school(text,public.edu_role), public.edu_invite(text,public.edu_role), public.edu_join_school(uuid), public.edu_dashboard() FROM anon;
+REVOKE ALL ON FUNCTION public.edu_profile_signup(), public.edu_track_metrics(), public.edu_notify_school() FROM anon,authenticated;
+GRANT EXECUTE ON FUNCTION public.edu_school(), public.edu_has_role(public.edu_role), public.edu_create_school(text,public.edu_role), public.edu_invite(text,public.edu_role), public.edu_join_school(uuid), public.edu_dashboard() TO authenticated;

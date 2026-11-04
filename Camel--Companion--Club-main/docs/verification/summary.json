@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-04",
+  "scope": "Local source code; no external production changes",
+  "node": "24.22.1",
+  "vitest": {
+    "passed": 114,
+    "skipped": 33,
+    "failed": 0
+  },
+  "playwright": {
+    "passed": 15,
+    "failed": 0,
+    "target": "built Node server",
+    "viewports": [
+      "1440x1000",
+      "768x1024",
+      "390x664 (iPhone 13 profile)"
+    ],
+    "languages": [
+      "es",
+      "en",
+      "fr"
+    ],
+    "cloud_configuration": "absent"
+  },
+  "python_tests": {
+    "passed": 2
+  },
+  "postgres_local_tests": 14,
+  "eslint": {
+    "errors": 0,
+    "warnings": 7
+  },
+  "typecheck": "passed",
+  "builds": {
+    "cloudflare": "passed",
+    "node_server": "passed"
+  },
+  "audit_production": {
+    "reported_vulnerabilities": 0
+  },
+  "audit_all": {
+    "moderate": 18,
+    "high": 0,
+    "critical": 0
+  },
+  "unverified": [
+    "remote Supabase auth and migrations",
+    "Stripe Checkout end-to-end",
+    "Resend delivery",
+    "managed scheduled job",
+    "real school efficacy",
+    "causal intervention effects",
+    "load benchmarks"
+  ],
+  "notes": [
+    "PostgreSQL runs in PGlite with stubbed Auth/Realtime infrastructure.",
+    "No real payment or external activation executed.",
+    "Screenshots were for internal QA and are not distributed."
+  ]
+}

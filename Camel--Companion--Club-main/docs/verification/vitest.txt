@@ -1,0 +1,14 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> test
+> vitest run
+
+
+ RUN  v4.1.12 /workspace/scratch/7d38c1681cfd/project/Camel--Companion--Club-main
+
+
+ Test Files  13 passed | 5 skipped (18)
+      Tests  114 passed | 33 skipped (147)
+   Start at  14:18:56
+   Duration  3.31s (transform 2.49s, setup 1.21s, import 5.16s, tests 4.15s, environment 6.60s)
+

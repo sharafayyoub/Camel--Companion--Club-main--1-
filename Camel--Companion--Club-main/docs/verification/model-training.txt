@@ -1,0 +1,20 @@
+[1/4] Generando datos completamente sintéticos, sin alumnos reales...
+[2/4] Entrenando Pipeline con Random Forest Interpretable (GridSearch CV)...
+[3/4] Evaluando métricas del modelo...
+ -> Accuracy: 80.8%
+ -> Recall:   80.8%
+ -> F1-Score: 0.81
+
+Informe detallado por nivel de alerta:
+              precision    recall  f1-score   support
+
+    Bajo (0)       0.72      0.68      0.70        19
+   Medio (1)       0.77      0.72      0.75        47
+    Alto (2)       0.86      0.93      0.89        54
+
+    accuracy                           0.81       120
+   macro avg       0.79      0.78      0.78       120
+weighted avg       0.80      0.81      0.81       120
+
+[4/4] Exportando modelo (.joblib) y reporte de explicabilidad (.json)...
+Proceso completado. Archivos generados en 'artifacts/'.

@@ -1,0 +1,610 @@
+{
+  "common": {
+    "appName": "edupulse",
+    "demoData": "Données démo",
+    "footer": "EduPulse Intelligence · La décision finale revient toujours à un professionnel de l'éducation.",
+    "language": "Langue",
+    "notFound": {
+      "title": "Page introuvable",
+      "text": "La page que vous cherchez n'existe pas ou a été déplacée.",
+      "home": "Retour à l'accueil"
+    },
+    "error": {
+      "title": "Cette page n'a pas pu se charger",
+      "text": "Une erreur s'est produite de notre côté. Vous pouvez réessayer ou revenir à l'accueil.",
+      "retry": "Réessayer",
+      "home": "Retour à l'accueil"
+    },
+    "navigation": "Navigation principale",
+    "skipContent": "Aller au contenu"
+  },
+  "nav": {
+    "panel": "Tableau de bord",
+    "datos": "Élèves",
+    "alertas": "Alertes",
+    "predicciones": "Prédictions",
+    "planes": "Plans",
+    "etica": "Éthique",
+    "licensing": "Licences institutionnelles",
+    "impact": "Impact Lab",
+    "menu": "Menu de navigation"
+  },
+  "levels": {
+    "verde": "Stable",
+    "amarillo": "Attention",
+    "rojo": "Prioritaire"
+  },
+  "home": {
+    "title1": "Nous anticipons les défis.",
+    "title2": "Nous ouvrons des opportunités.",
+    "subtitle": "L'intelligence éducative pour détecter, comprendre et améliorer. Pulsi vous accompagne à chaque étape.",
+    "ctaDemo": "Voir la démo",
+    "ctaUpload": "Importer mes données",
+    "howTitle": "Comment ça marche",
+    "steps": {
+      "ingesta": {
+        "t": "Ingestion",
+        "d": "Enregistrez élèves et indicateurs dans votre établissement privé."
+      },
+      "deteccion": {
+        "t": "Détection",
+        "d": "Des règles transparentes signalent qui a besoin d'attention."
+      },
+      "prediccion": {
+        "t": "Évaluation",
+        "d": "Comparez les indicateurs avant et après le soutien."
+      },
+      "intervencion": {
+        "t": "Intervention",
+        "d": "Des plans revus par des professionnels, avec suivi."
+      }
+    },
+    "ethics": {
+      "t": "Éthique par conception",
+      "d": "Nous n'inventons pas de prédictions. Chaque alerte explique son motif."
+    },
+    "human": {
+      "t": "L'humain décide",
+      "d": "La décision finale revient toujours à un professionnel de l'éducation."
+    },
+    "mascotAlt": "Pulsi, la mascotte chameau d'EduPulse"
+  },
+  "panel": {
+    "title": "Tableau de bord de l'établissement",
+    "source": "Source : {{name}}",
+    "kpi": {
+      "students": "Élèves",
+      "attendance": "Taux de présence moyen",
+      "grade": "Note moyenne",
+      "redAlerts": "Alertes prioritaires"
+    },
+    "trafficLight": "Feu tricolore par groupe",
+    "colGroup": "Groupe",
+    "colAttendance": "Prés.",
+    "colGrade": "Note",
+    "colTasks": "Devoirs",
+    "colStatus": "État",
+    "gradeByGroup": "Note moyenne par groupe",
+    "monthlyEvolution": "Évolution mensuelle",
+    "months": [
+      "Sept",
+      "Oct",
+      "Nov",
+      "Déc",
+      "Janv",
+      "Févr"
+    ]
+  },
+  "datos": {
+    "title": "Chargement des données",
+    "activeData": "Données actives : {{name}} ({{count}} lignes)",
+    "selectFile": "Sélectionnez un fichier CSV",
+    "columns": "Colonnes : {{columns}}",
+    "downloadTemplate": "Télécharger le modèle",
+    "backToDemo": "Revenir aux données démo",
+    "validationOf": "Validation de {{file}}",
+    "missingColumns": "Colonnes manquantes : {{columns}}",
+    "validRows": "{{valid}} lignes valides",
+    "errorRows": "{{errors}} avec erreurs",
+    "line": "Ligne {{line}} : {{message}}",
+    "useData": "Utiliser ces données",
+    "goToPanel": "Aller au tableau de bord",
+    "privacyNote": "Les données sont enregistrées dans Cloud avec accès privé par établissement.",
+    "mascotAlt": "Pulsi examinant les données"
+  },
+  "alertas": {
+    "title": "Alertes",
+    "subtitle": "Générées par des règles fixes et visibles, pas par l'IA.",
+    "rules": "Règles : présence < {{ar}} % prioritaire, < {{ay}} % attention · note < {{nr}} / {{ny}} · devoirs < {{tr}} % / {{ty}} %",
+    "allLevels": "Tous les niveaux",
+    "allGroups": "Tous les groupes",
+    "levelFilter": "Niveau",
+    "groupFilter": "Groupe",
+    "count": "{{count}} alertes",
+    "emptyTitle": "Aucune alerte",
+    "emptyText": "Aucun élève ne correspond à ces filtres. Bonne nouvelle !",
+    "metrics": {
+      "asistencia": "Présence",
+      "nota_media": "Note moyenne",
+      "tareas_entregadas": "Devoirs rendus"
+    },
+    "factor": "{{metric}} {{value}}{{unit}} < {{threshold}}{{unit}}",
+    "count_one": "{{count}} alerte",
+    "count_other": "{{count}} alertes"
+  },
+  "predicciones": {
+    "title": "Prédictions",
+    "subtitle": "Estimations du risque futur avec explication de chaque facteur.",
+    "notConnected": "Modèle non connecté",
+    "notConnectedText": "{{reason}} Une fois connecté, vous verrez ici les prédictions et les indicateurs qui les expliquent. Nous n'affichons pas de résultats inventés.",
+    "checking": "Vérification de l'état du modèle…",
+    "reasons": {
+      "notConfigured": "Un prototype a été entraîné sur des données synthétiques ; l’inférence n’est ni connectée ni validée avec des données éducatives réelles."
+    },
+    "currentSignals": "Signaux actuels de la classe",
+    "currentSignalsText": "Indicateurs observés selon des règles ; ce ne sont pas des prédictions de décrochage.",
+    "model": "Modèle connecté : {{name}} · {{version}}"
+  },
+  "predictionDemo": {
+    "subtitle": "Modèle Prédictif v1.0 · Démonstration explicable pour le hackathon",
+    "modelHeader": "Fiche technique du modèle de démonstration",
+    "modelBadge": "Prototype Random Forest · Service non connecté",
+    "method": "Expérience locale sur données synthétiques. Les alertes de l’application reposent sur des règles.",
+    "simulationBadge": "DÉMO · RÉSULTATS SIMULÉS",
+    "precision": "Exactitude · test synthétique",
+    "recall": "Rappel pondéré · synthétique",
+    "f1": "F1 pondéré · synthétique",
+    "training": "Rapport inclus : 480 données synthétiques d’entraînement, 120 de test séparé et validation croisée à 5 partitions sur l’entraînement. Cela ne mesure pas l’efficacité dans des écoles réelles.",
+    "disclaimer": "Les métriques ci-dessus viennent du rapport synthétique inclus. Le graphique et les poids ci-dessous sont des exemples visuels distincts : ni inférence, ni confiance calibrée, ni attribution SHAP.",
+    "student": "Élève pseudonymisé",
+    "horizon": "Horizon illustratif : {{months}} mois",
+    "results": "Résultats de la simulation",
+    "risk": "Indice d’un exemple fictif",
+    "exampleFor": "Scénario illustratif · {{code}}",
+    "riskValue": "Indice fictif : {{value}}",
+    "estimatedRisk": "Exemple visuel de signal",
+    "simulatedValue": "Valeur simulée · Pas un pronostic",
+    "confidence": "Confiance illustrative : {{value}}",
+    "confidenceNote": "Aucune confiance calibrée n’est disponible pour cet élève.",
+    "factorsTitle": "Facteurs de l’exemple visuel",
+    "factorsSubtitle": "Poids illustratifs, et non explications calculées pour cet élève.",
+    "factors": {
+      "absences": "Taux d’absences récentes",
+      "submissions": "Baisse des devoirs rendus",
+      "resources": "Déconnexion des ressources ProFuturo",
+      "connectivity": "Inégalités de connexion à domicile"
+    },
+    "weightsNote": "Poids relatifs illustratifs (total : 100 %). Pas des points de probabilité, des effets causaux ou des contributions SHAP calculées ; le même exemple est conservé lors du changement d’élève.",
+    "noExample": "Ce dossier n’a pas de scénario de démonstration. Aucune probabilité simulée n’est générée pour des élèves réels.",
+    "humanReview": "L’enseignant décide du soutien après examen des indicateurs et du contexte réels.",
+    "toPlan": "Transférer vers un Plan d’Intervention Enseignant",
+    "handoffNote": "Origine : démonstration prédictive. Seul l’élève est sélectionné ; aucun pourcentage ou poids simulé n’est enregistré. Définissez l’action, la priorité et vos notes, puis confirmez la révision humaine.",
+    "closeHandoff": "Fermer la révision de l’élève"
+  },
+  "planes": {
+    "title": "Plans d'intervention",
+    "subtitle": "Enregistrés dans Cloud, avec révision humaine.",
+    "newPlan": "Nouveau plan",
+    "phTitle": "Titre",
+    "phGroup": "Groupe (ex. 2B)",
+    "phOwner": "Responsable",
+    "phAction": "Action prévue",
+    "fillAll": "Veuillez remplir tous les champs.",
+    "create": "Créer le plan",
+    "delete": "Supprimer",
+    "status": "État",
+    "reviewed": "Revu par un professionnel",
+    "emptyTitle": "Pas encore de plans",
+    "emptyText": "Créez le premier plan à partir d'une alerte.",
+    "statuses": {
+      "pendiente": "En attente",
+      "en_curso": "En cours",
+      "completado": "Terminé",
+      "descartado": "Écarté"
+    }
+  },
+  "etica": {
+    "title": "Éthique et transparence",
+    "subtitle": "Nos engagements envers les élèves et les enseignants.",
+    "items": {
+      "humano": {
+        "t": "L'humain décide",
+        "d": "Les alertes orientent ; la décision appartient toujours à un professionnel de l'éducation."
+      },
+      "sinInventar": {
+        "t": "Aucune prédiction inventée",
+        "d": "Nous n'affichons des prédictions que lorsqu'un modèle réel et évalué existe."
+      },
+      "explicabilidad": {
+        "t": "Explicabilité",
+        "d": "Chaque alerte indique quel indicateur et quel seuil l'ont déclenchée."
+      },
+      "privacidad": {
+        "t": "Confidentialité",
+        "d": "Identifiants pseudonymisés et accès privé par établissement. La direction reçoit uniquement des résultats agrégés."
+      },
+      "equidad": {
+        "t": "Équité",
+        "d": "Les signaux décrivent des situations, jamais des personnes."
+      },
+      "accesible": {
+        "t": "Accessible",
+        "d": "Des formulaires simples pour enregistrer et suivre le soutien éducatif de chaque élève."
+      }
+    },
+    "mascotAlt": "Pulsi qui salue"
+  },
+  "mascot": {
+    "welcome": "Bonjour ! Découvrons comment améliorer votre établissement.",
+    "thinking": "J'analyse les données...",
+    "success": "Parfait ! Votre plan d'action a été enregistré."
+  },
+  "auth": {
+    "title": "Votre espace éducatif",
+    "login": "Se connecter",
+    "signup": "Créer un compte",
+    "email": "Email",
+    "password": "Mot de passe (8 caractères min.)",
+    "name": "Nom affiché",
+    "account": "Mon compte",
+    "signOut": "Se déconnecter",
+    "forgot": "Mot de passe oublié ?",
+    "sendReset": "Envoyer le lien de récupération",
+    "confirmEmail": "Consultez votre email et confirmez votre compte avant de vous connecter.",
+    "resetSent": "Si un compte existe avec cet email, vous recevrez un lien de récupération.",
+    "invalid": "Vérifiez votre email, votre nom et votre mot de passe.",
+    "loginError": "Connexion impossible. Vérifiez vos informations et confirmez votre email.",
+    "newPassword": "Nouveau mot de passe",
+    "confirmPassword": "Répétez le mot de passe",
+    "invalidReset": "Utilisez un lien valide et deux mots de passe identiques de 8 caractères minimum.",
+    "invalidEmailDomain": "Utilisez un email réel pouvant recevoir la confirmation ; les domaines d’exemple ne sont pas autorisés."
+  },
+  "cloud": {
+    "loading": "Chargement de votre établissement…",
+    "saving": "Enregistrement…",
+    "save": "Enregistrer",
+    "saved": "Enregistré dans Cloud",
+    "error": "Impossible de terminer cette opération. Réessayez.",
+    "continue": "Continuer",
+    "select": "Sélectionner…",
+    "live": "Mise à jour en direct",
+    "notConfigured": "Configurez Supabase pour accéder à l’établissement privé. La démo fictive est disponible sans connexion à un compte."
+  },
+  "school": {
+    "title": "Votre établissement",
+    "create": "Créer un établissement",
+    "join": "Rejoindre sur invitation",
+    "name": "Nom de l’établissement",
+    "role": "Rôle éducatif",
+    "teacher": "Enseignant",
+    "director": "Direction",
+    "isolated": "Un nouvel établissement privé sera créé. Une invitation est nécessaire pour rejoindre un établissement existant.",
+    "inviteCode": "Code d’invitation",
+    "invalidInvite": "Cette invitation a expiré, a été utilisée ou ne correspond pas à votre email confirmé.",
+    "team": "Équipe de l’établissement",
+    "invite": "Créer une invitation",
+    "shareInvite": "Partagez ce code avec {{email}}. Il expire dans 7 jours ; cette personne doit utiliser cet email.",
+    "copy": "Copier le code",
+    "copied": "Code copié",
+    "aggregateOnly": "La direction accède aux indicateurs agrégés, sans observations ni notes individuelles."
+  },
+  "students": {
+    "title": "Élèves",
+    "new": "Nouvel élève",
+    "code": "Code pseudonymisé",
+    "course": "Classe / groupe",
+    "attendance": "Présence (%)",
+    "submissions": "Devoirs rendus (%)",
+    "resource_usage": "Utilisation des ressources (%)",
+    "grade": "Note moyenne (0–10)",
+    "observations": "Observations pédagogiques",
+    "connectivity": "Connectivité",
+    "connectivityOptions": {
+      "unknown": "Non renseignée",
+      "low_none": "Faible / inexistante",
+      "intermittent": "Intermittente",
+      "medium": "Moyenne",
+      "good": "Bonne"
+    },
+    "risk": "Signal de risque",
+    "enrollment": "Situation scolaire",
+    "status": {
+      "active": "En cours",
+      "completed": "Terminé",
+      "withdrawn": "Départ"
+    },
+    "privacy": "Utilisez uniquement des codes pseudonymisés ; aucun nom, contact ou donnée sensible dans les notes.",
+    "invalid": "Vérifiez le code et les valeurs des indicateurs.",
+    "duplicate": "Ce code existe déjà dans cet établissement.",
+    "search": "Rechercher un code ou une classe",
+    "empty": "Aucun élève pour le moment",
+    "emptyText": "Enregistrez le premier élève avec son code et ses indicateurs éducatifs.",
+    "open": "Ouvrir l’élève",
+    "metrics": "Indicateurs et observations",
+    "notFound": "Cet élève n’existe pas ou vous n’avez pas accès.",
+    "deleteConfirm": "Supprimer cet élève, tous ses plans et son historique ?",
+    "manage": "Gérer",
+    "noMatches": "Aucun résultat",
+    "noMatchesText": "Aucun élève ne correspond à cette recherche."
+  },
+  "plansCloud": {
+    "new": "Plan de soutien assisté",
+    "signal": "Signal actuel par règles : {{level}}. L’enseignant décide de l’action et de la priorité.",
+    "action": "Action de soutien",
+    "actionDetail": "Action personnalisée",
+    "pendingValidation": "En attente de validation enseignante",
+    "reviewProposal": "Examiner la proposition",
+    "validate": "Valider et créer le plan",
+    "priority": "Priorité",
+    "notes": "Notes personnalisées",
+    "review": "J’ai examiné la situation et je confirme personnellement ce plan.",
+    "invalid": "Sélectionnez une action et une priorité, ajoutez vos notes et confirmez la révision.",
+    "actions": {
+      "tutoring": "Tutorat de renforcement",
+      "resources": "Soutien avec ressources éducatives",
+      "family": "Coordination avec la famille",
+      "mentoring": "Accompagnement pédagogique"
+    },
+    "priorities": {
+      "low": "Faible",
+      "medium": "Moyenne",
+      "high": "Élevée"
+    },
+    "empty": "Ouvrez un élève pour créer un plan de soutien révisé par vous.",
+    "deleteConfirm": "Supprimer ce plan d’intervention ?"
+  },
+  "dashboard": {
+    "director": "Tableau de bord de direction",
+    "teacher": "Ma classe",
+    "students": "Élèves",
+    "attendance": "Présence moyenne",
+    "retention": "Rétention",
+    "resources": "Usage des ressources",
+    "plans": "Plans",
+    "completedPlans": "Terminés",
+    "refresh": "Actualiser",
+    "retentionDefinition": "Rétention observée : élèves en cours ou ayant terminé / total enregistré. Ce n’est pas une prédiction.",
+    "empty": "Votre établissement n’a pas encore de données",
+    "emptyDirector": "Invitez des enseignants pour commencer le suivi éducatif.",
+    "groups": "Indicateurs par classe",
+    "evolution": "Évolution de présence enregistrée",
+    "impact": "Ressources et résultats observés",
+    "impactNote": "Comparez l’usage des ressources (≥ 50 % et < 50 %) avec présence et devoirs. Une association ne démontre pas la causalité. La variation nécessite deux enregistrements.",
+    "change": "Variation de présence",
+    "points": " points",
+    "usage": {
+      "high": "Usage ≥ 50 %",
+      "low": "Usage < 50 %"
+    }
+  },
+  "meta": {
+    "home": {
+      "title": "EduPulse Intelligence",
+      "description": "Suivi éducatif avec alertes transparentes et plans révisés par les enseignants."
+    },
+    "auth": {
+      "title": "Accès éducatif",
+      "description": "Inscription et connexion pour enseignants et direction."
+    },
+    "reset": {
+      "title": "Réinitialiser le mot de passe",
+      "description": "Rétablissez l’accès sécurisé à votre compte éducatif."
+    },
+    "students": {
+      "title": "Élèves de la classe",
+      "description": "Élèves pseudonymisés et indicateurs éducatifs de l’établissement."
+    },
+    "student": {
+      "title": "Fiche de l’élève",
+      "description": "Indicateurs et plans de soutien révisés par les enseignants."
+    },
+    "panel": {
+      "title": "Tableau de bord éducatif",
+      "description": "Rétention, ressources et suivi avec les données réelles de l’établissement."
+    },
+    "alerts": {
+      "title": "Alertes précoces",
+      "description": "Alertes par règles transparentes expliquant chaque signal."
+    },
+    "predictions": {
+      "title": "Prédictions explicables",
+      "description": "Démonstration explicable avec chiffres simulés et révision enseignante, distincte des signaux réels."
+    },
+    "plans": {
+      "title": "Plans d’intervention",
+      "description": "Actions de soutien avec priorité, notes et révision humaine."
+    },
+    "ethics": {
+      "title": "Éthique et transparence",
+      "description": "Engagements de confidentialité, d’équité et de supervision professionnelle."
+    },
+    "licensing": {
+      "title": "Licences institutionnelles",
+      "description": "Accompagnement, déploiement et formation des enseignants"
+    },
+    "paymentResult": {
+      "title": "État de souscription",
+      "description": "Résumé de souscription"
+    },
+    "impact": {
+      "title": "EduPulse Impact Lab",
+      "description": "Transformer une alerte en soutien validé et en apprentissage partagé."
+    }
+  },
+  "licensing": {
+    "title": "Licences institutionnelles",
+    "subtitle": "Accompagnement, déploiement et formation des enseignants",
+    "once": "Paiement unique",
+    "coverage": "Jusqu’à {{count}} établissements",
+    "coverage_one": "Jusqu’à {{count}} établissement",
+    "coverage_other": "Jusqu’à {{count}} établissements",
+    "available": "{{count}} places d’établissement disponibles",
+    "soldOut": "Places épuisées",
+    "contract": "Souscrire",
+    "select": "Offre sélectionnée",
+    "institution": "Institution / responsable",
+    "email": "Email de facturation",
+    "beneficiaries": "Établissements bénéficiaires",
+    "direct": "Désignation directe",
+    "solidarity": "Banque solidaire",
+    "centreCount": "Nombre d’établissements",
+    "centreName": "Établissement {{number}}",
+    "solidarityNote": "Les places sont réservées aux établissements vulnérables. Leur attribution reste à effectuer selon la faible connectivité, le manque de ressources et le décrochage précoce.",
+    "fullPrice": "Le prix est forfaitaire et unique, quel que soit le nombre d’établissements sélectionnés.",
+    "payment": "Continuer vers le paiement",
+    "processing": "Préparation du paiement…",
+    "back": "Retour aux offres",
+    "invalid": "Vérifiez l’institution, l’email et les établissements ; évitez les noms en double.",
+    "capacityChanged": "Il ne reste plus assez de places pour cette sélection. Actualisez les offres.",
+    "unavailable": "Le paiement ne peut pas démarrer maintenant. Réessayez plus tard.",
+    "notReady": "La souscription est momentanément indisponible.",
+    "test": "Mode test · Aucun argent réel n’est débité",
+    "tax": "Taxes incluses selon le calcul au paiement",
+    "refresh": "Actualiser les places",
+    "resultTitle": "État de souscription",
+    "verifying": "Vérification du paiement auprès de Stripe…",
+    "active": "Paiement confirmé · Licence active",
+    "pending": "Paiement en attente de confirmation",
+    "cancelled": "Paiement annulé",
+    "pendingNote": "Aucun paiement n’est encore terminé. Aucune licence n’a été activée.",
+    "cancelledNote": "Aucune licence n’a été activée ; les places réservées ont été libérées.",
+    "invalidReceipt": "Cette souscription ne peut pas être consultée depuis ce navigateur. Revenez avec le navigateur utilisé pour démarrer le paiement.",
+    "retry": "Vérifier à nouveau",
+    "cancel": "Annuler la réservation",
+    "license": "Référence de licence",
+    "date": "Date d’activation",
+    "centres": "Places souscrites",
+    "amount": "Montant payé",
+    "assignment": "Attribution solidaire en attente",
+    "designated": "Établissements désignés",
+    "summary": "Résumé de souscription",
+    "confirmation": {
+      "subject": "Achat confirmé · Licence active",
+      "testSubject": "TEST · Confirmation d’achat de licence",
+      "intro": "Votre paiement a été vérifié et votre licence institutionnelle est active. Voici les détails de votre souscription.",
+      "footer": "Conservez cet email comme confirmation de votre souscription. Il ne constitue pas une facture fiscale."
+    },
+    "packages": {
+      "pilot": {
+        "name": "Offre Pilote École Rurale",
+        "description": "Déploiement dans un établissement.",
+        "features": [
+          "Assistance technique",
+          "Supports pour faible connectivité (service à convenir)",
+          "Atelier initial pour enseignants"
+        ]
+      },
+      "district": {
+        "name": "Programme District Éducatif",
+        "description": "Couverture d’établissements vulnérables d’un district.",
+        "features": [
+          "Tableau de bord agrégé de l’établissement pour la direction",
+          "Analyse de la rétention",
+          "Trois sessions de formation"
+        ]
+      },
+      "regional": {
+        "name": "Alliance Régionale / Réseau ProFuturo",
+        "description": "Déploiement à l’échelle d’un réseau éducatif.",
+        "features": [
+          "Intégration personnalisée des données",
+          "Audit d’impact",
+          "Assistance prioritaire"
+        ]
+      }
+    }
+  },
+  "impact": {
+    "title": "EduPulse Impact Lab",
+    "subtitle": "Transformer une alerte en soutien validé et en apprentissage partagé.",
+    "demo": "Essayer des données fictives",
+    "context": "1 · Comprendre la situation",
+    "designForm": "Conception de l’intervention",
+    "compare": "Comparer les soutiens",
+    "compareHelp": "Sélectionnez un ou plusieurs soutiens. Désélectionnez une option pour l’écarter avant validation. Adaptez les ressources et la durée à votre établissement.",
+    "resources": "Ressources nécessaires",
+    "indicators": "Indicateurs à observer",
+    "weeks": "{{count}} semaines indicatives",
+    "selected": "Sélectionné · Retirer",
+    "select": "Ajouter au plan",
+    "primaryAction": "Le premier soutien sélectionné sera la catégorie principale du plan. Les combinaisons sont conservées dans son évaluation.",
+    "scenario": "Explorer des scénarios",
+    "scenarioNotice": "Scénario illustratif : vous choisissez les objectifs. Aucun modèle validé n’estime l’effet de ces soutiens. Ce n’est ni une prédiction ni une amélioration garantie.",
+    "targetValue": "{{baseline}} → {{target}} ({{delta}} {{unit}})",
+    "targetLabel": "Objectif hypothétique : {{metric}}",
+    "percentagePoints": "points de %",
+    "gradePoints": "points /10",
+    "targetsNotEvidence": "Ces objectifs sont explorés uniquement à l’écran. Ils ne sont pas enregistrés comme observations et ne modifient pas le dossier de l’élève.",
+    "decision": "Décision enseignante",
+    "duration": "Durée prévue (semaines)",
+    "objective": "Objectif et actions adaptés à l’élève",
+    "review": "J’ai examiné le contexte, les soutiens, leur faisabilité et les notes. J’approuve ce plan sous ma responsabilité professionnelle.",
+    "approve": "Approuver et créer le plan",
+    "updatePlan": "Approuver les modifications",
+    "invalid": "Sélectionnez au moins un soutien, indiquez 1 à 52 semaines, complétez l’objectif et les notes, puis confirmez votre examen.",
+    "saveError": "Enregistrement impossible. Vérifiez la connexion et réessayez. La modification n’a pas été confirmée.",
+    "approved": "Plan et situation initiale enregistrés",
+    "followup": "Suivi observé",
+    "observedNotice": "Une différence observée ne prouve pas qu’elle a été causée par le soutien. D’autres facteurs peuvent intervenir ; il n’y a ni groupe témoin ni estimation causale.",
+    "participationProxy": "La participation est estimée par le pourcentage de devoirs remis. Cet indicateur ne mesure pas toute la participation en classe.",
+    "noFollowups": "Aucune observation de suivi. La situation initiale conserve les indicateurs disponibles lors de l’association du plan.",
+    "chartLabel": "Évolution observée : présence et devoirs sur l’axe 0–100 % ; note sur l’axe 0–10. Les mêmes données figurent dans le tableau.",
+    "history": "Historique · présence et devoirs 0–100 % ; note 0–10",
+    "date": "Date observée (UTC)",
+    "baseline": "Situation initiale",
+    "record": "Enregistrer une observation",
+    "manualObservation": "Saisissez des données vérifiées et précisez la période ou le contexte. Une observation par plan et par jour est conservée. Le dossier de l’élève n’est pas modifié automatiquement.",
+    "followupInvalid": "Vérifiez les indicateurs, les notes et la date : elle doit être comprise entre la situation initiale et aujourd’hui.",
+    "duplicateDate": "Une observation existe déjà pour cette date. Choisissez une autre date observée ; le relevé existant est conservé.",
+    "institutional": "Ce que l’établissement apprend",
+    "privacyThreshold": "Seuls les groupes d’au moins {{count}} élèves distincts sont publiés. Aucun identifiant ni note libre n’est affiché. Les exemples sont exclus.",
+    "aggregateMethod": "Variation moyenne observée de la dernière évaluation de chaque élève, regroupée par soutien principal. Les combinaisons ne permettent pas d’isoler l’effet de chaque soutien.",
+    "suppressed": "Aucun groupe n’a assez d’observations pour être publié. Les effectifs des petits groupes ne sont pas divulgués.",
+    "fictionalAggregate": "Exemple institutionnel fictif · aucun résultat réel",
+    "chooseStudent": "Sélectionner un élève",
+    "linkPlan": "Utiliser un plan existant ou en créer un",
+    "newPlan": "Créer un nouveau plan",
+    "unavailable": "Impact Lab indisponible",
+    "unavailableHelp": "Les évaluations n’ont pas pu être chargées. Vérifiez la connexion et l’installation des migrations 0009 et 0010 dans l’environnement de test. Les plans existants restent accessibles dans leur rubrique.",
+    "resetDemo": "Réinitialiser la démo",
+    "demoNotice": "DÉMO AVEC DONNÉES FICTIVES · Aucun compte requis. Les modifications restent sur cet écran et disparaissent au rechargement. Aucune donnée n’est envoyée à un établissement et aucun plan réel n’est créé.",
+    "openPrivate": "Ouvrir Impact Lab privé",
+    "demoObjective": "Tutorat hebdomadaire et accès à des supports hors ligne pendant six semaines ; vérifier la présence et les devoirs chaque semaine.",
+    "demoNotes": "Exemple fictif pour le jury. Vérifier les disponibilités et les supports ; adapter le soutien avec l’élève.",
+    "demoApproved": "Plan approuvé dans cette démonstration",
+    "demoExampleHelp": "Saisissez une observation fictive ou chargez l’exemple préparé. Aucun ne représente un résultat réel.",
+    "loadExample": "Charger un exemple fictif de suivi",
+    "demoFollowupNotes": "Observation entièrement fictive : comparaison d’indicateurs sur quatre semaines. La variation ne peut pas être attribuée à l’intervention.",
+    "smallGroups": "Résultats masqués pour protéger la confidentialité",
+    "smallGroupsHelp": "La direction a besoin d’au moins cinq élèves réels pour consulter les indicateurs. Les petits sous-groupes sont également masqués.",
+    "delivery": "Ce qui est disponible aujourd’hui",
+    "deliveryNote": "L’application enregistre les élèves, explique les alertes et évalue les plans. Formation, assistance et intégrations sont des services à convenir avec l’institution. Le fonds solidaire nécessite une attribution humaine ; une licence enregistrée ne crée ni n’active automatiquement les comptes des établissements.",
+    "metrics": {
+      "attendance": "Présence",
+      "grade": "Note moyenne",
+      "submissions": "Participation · devoirs remis"
+    },
+    "catalog": {
+      "tutoring": {
+        "objective": "Accompagner les difficultés d’apprentissage précises avec un tutorat personnalisé.",
+        "resources": "Un enseignant ou tuteur, une séance hebdomadaire et des supports adaptés.",
+        "indicators": "Note moyenne, présence et devoirs au départ puis à chaque bilan."
+      },
+      "resources": {
+        "objective": "Réduire les obstacles de connexion et d’accès aux supports pédagogiques.",
+        "resources": "Prêt d’un appareil si disponible, supports imprimés ou contenus téléchargés à l’avance.",
+        "indicators": "Devoirs et accès aux ressources ; confirmer les obstacles avec l’élève."
+      },
+      "family": {
+        "objective": "Convenir avec la famille ou les référents d’un suivi adapté à leur situation.",
+        "resources": "Temps de tutorat et canal de contact autorisé par l’établissement.",
+        "indicators": "Présence et devoirs ; consigner les accords sans détails familiaux sensibles."
+      },
+      "mentoring": {
+        "objective": "Renforcer les connaissances et les habitudes de travail par un soutien scolaire.",
+        "resources": "Séances de renforcement, exercices progressifs et coordination enseignante.",
+        "indicators": "Note moyenne et devoirs ; préciser la période et les contenus étudiés."
+      }
+    }
+  }
+}

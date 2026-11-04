@@ -1,0 +1,6 @@
+ALTER TABLE public.intervention_plans ALTER COLUMN reviewed DROP DEFAULT;
+CREATE FUNCTION public.edu_stamp_student() RETURNS trigger LANGUAGE plpgsql SET search_path=public AS $$ BEGIN IF TG_OP='INSERT' THEN NEW.created_at=now(); ELSE NEW.created_at=OLD.created_at; END IF; NEW.updated_at=now(); RETURN NEW; END $$;
+CREATE TRIGGER stamp_student BEFORE INSERT OR UPDATE ON public.students FOR EACH ROW EXECUTE FUNCTION public.edu_stamp_student();
+CREATE FUNCTION public.edu_stamp_plan() RETURNS trigger LANGUAGE plpgsql SET search_path=public AS $$ BEGIN IF TG_OP='INSERT' THEN NEW.created_at=now(); NEW.reviewed_at=now(); ELSE NEW.created_at=OLD.created_at; NEW.reviewed_at=CASE WHEN (NEW.support_action,NEW.priority,NEW.notes) IS DISTINCT FROM (OLD.support_action,OLD.priority,OLD.notes) THEN now() ELSE OLD.reviewed_at END; END IF; RETURN NEW; END $$;
+CREATE TRIGGER stamp_plan BEFORE INSERT OR UPDATE ON public.intervention_plans FOR EACH ROW EXECUTE FUNCTION public.edu_stamp_plan();
+REVOKE ALL ON FUNCTION public.edu_stamp_student(),public.edu_stamp_plan() FROM PUBLIC,anon,authenticated;

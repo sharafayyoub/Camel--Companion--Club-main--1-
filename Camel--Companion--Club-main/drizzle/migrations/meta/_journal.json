@@ -1,0 +1,83 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1793701400662,
+      "tag": "0000_educational_cloud_accounts_students_plans",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1793701738517,
+      "tag": "0001_restrict_educational_function_grants",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1793701832179,
+      "tag": "0002_require_explicit_plan_review_and_record_timestamps",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1793702078428,
+      "tag": "0003_aggregate_latest_daily_student_metrics",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1793702255714,
+      "tag": "0004_restrict_direct_school_membership_writes",
+      "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1793705307533,
+      "tag": "0005_institutional_guest_licensing_and_atomic_capacity",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1793706975871,
+      "tag": "0006_institutional_purchase_confirmation_outbox",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1793708466813,
+      "tag": "0007_educational_connectivity_proposals_and_sandbox_allocations",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1793708661952,
+      "tag": "0008_atomic_teacher_proposal_validation",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1793788800000,
+      "tag": "0009_impact_lab",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1793788801000,
+      "tag": "0010_privacy_and_provenance",
+      "breakpoints": true
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+test_reproducible_bounded_synthetic_data_without_global_rng_changes (test_model.SyntheticModelTests.test_reproducible_bounded_synthetic_data_without_global_rng_changes) ... ok
+test_zero_deviation_does_not_produce_nan_or_fake_local_attributions (test_model.SyntheticModelTests.test_zero_deviation_does_not_produce_nan_or_fake_local_attributions) ... ok
+
+----------------------------------------------------------------------
+Ran 2 tests in 0.021s
+
+OK
